@@ -2,6 +2,8 @@
 #include <string>
 using namespace std;
 
+// evil evil monkey !
+
 typedef struct {
 	UserInterface * ui;
 	Fl_Double_Window * win;

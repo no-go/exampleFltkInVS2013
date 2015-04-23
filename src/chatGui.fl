@@ -1,0 +1,42 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0303 
+header_name {.h} 
+code_name {.cxx}
+class UserInterface {open
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window {} {
+      label {VSY Chat GUI} open
+      xywh {448 297 625 410} type Double size_range {635 410 635 410} visible
+    } {
+      Fl_Check_Browser bodyBrowser {
+        label Buddies
+        xywh {475 65 140 330} align 5
+      }
+      Fl_Text_Display chatlogTxt {selected
+        xywh {25 65 435 290}
+      }
+      Fl_Input serverTxt {
+        label {Default Server}
+        xywh {115 15 175 25}
+      }
+      Fl_Input portTxt {
+        label {:}
+        xywh {300 15 70 25}
+      }
+      Fl_Button connectBtn {
+        label connect
+        xywh {380 15 80 25}
+      }
+      Fl_Input msgTxt {
+        label Message
+        xywh {85 365 285 30}
+      }
+      Fl_Button sendBtn {
+        label send
+        xywh {385 365 75 30}
+      }
+    }
+  }
+} 
